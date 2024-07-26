@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+:root{
+    --blue: #2A4B60;
+    --white-blue: #2f557185;
+    --orange: #D49638;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+.cabecalho{
+    background-image: url(../img/chapada-dos-veadeiros.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+}
+
+.barra-nav{
+    color: var(--white);
+    background-color: var(--white-blue);
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+}
+
+.barra-nav h1{
+    padding: 20px;
+    font-size: 16px;
+    background-color: var(--blue);
+    letter-spacing: 1px;
+}
+
+.barra-nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+}
+
+.barra-nav ul > li{
+    border-radius: 4px;
+    padding: 12px;
+    transition: background-color 0.45s;
+}
+
+.barra-nav ul > li:hover{
+    transform: 0.3s;
+    background-color: var(--blue);
+    cursor: pointer;
+}
