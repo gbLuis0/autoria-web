@@ -3,20 +3,29 @@
     font-family: sans-serif;
 }
 
+span{
+    font-weight: bold;
+}
+
+h1, h2{
+    font-weight: 400;
+}
+
 :root{
     --blue: #2A4B60;
     --white-blue: #2f557185;
-    --orange: #D49638;
+    --orange: #eca233;
     --white: #ffffff;
     --black: #000000;
 }
 
 .cabecalho{
-    background-image: url(../img/chapada-dos-veadeiros.jpg);
+    background-image: url(../img/paisagem--large-hi-dpi.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
-    height: 300px;
+    background-size: container;
+    background-position: bottom center;
+    height: 400px;
 }
 
 .barra-nav{
@@ -53,4 +62,71 @@
     transform: 0.3s;
     background-color: var(--blue);
     cursor: pointer;
+}
+
+.cabecalho-textos{
+    margin: auto;
+    margin-top: 55px;
+    text-align: center;
+    width: fit-content;
+}
+
+.cabecalho-textos h1{
+    font-size: 56px;
+}
+
+.cabecalho-textos h2{
+    font-size: 34px;
+    margin-bottom: 16px;
+}
+
+.cabecalho-textos h1, .cabecalho-textos h2{
+    color: var(--blue);
+}
+
+.cabecalho-textos p, .cabecalho-textos a{
+    color: var(--white);
+}
+
+.cabecalho-textos p{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 16px;
+}
+
+.cabecalho-textos a{
+    padding: 10px;
+    background-color: var(--orange);
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.section__primeira-viagem{
+    margin: auto;
+    max-width: 836px;
+    margin-top: 60px;
+}
+
+.img__primeira-viagem{
+    width: 100%;
+}
+
+.primeira-viagem__cabecalho h1{
+    text-align: center;
+    color: var(--blue);
+    font-size: 32px;
+}
+
+.primeira-viagem__cabecalho h2{
+    color: var(--orange);
+    width: 50%;
+    margin: 30px auto 30px;
+    text-align: center;
+}
+
+.mulher{
+    width: 20%;
+    float: left;
 }
