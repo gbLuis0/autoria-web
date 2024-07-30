@@ -128,7 +128,7 @@ h1, h2{
 
 .mulher{
     width: 26%;
-    float: left;
+    /* float: left; */
     margin: 2px 26px 0 0;
 }
 
@@ -143,4 +143,26 @@ h1, h2{
 .article__texto p{
     letter-spacing: 1px;
     line-height: 20px;
+}
+
+#texto{
+    display: flex;
+    align-items: start;
+}
+
+.mulher{
+    flex-shrink: 3;
+}
+
+.article__texto{
+    flex-grow: 1;
+}
+
+.article__texto{
+    width: 60%;
+}
+
+#servicos{
+    background-color: var(--blue);
+    padding: ;
 }
