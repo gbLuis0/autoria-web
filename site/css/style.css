@@ -5,18 +5,20 @@
 
 span{
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 h1, h2{
-    font-weight: 400;
+    font-weight: lighter;
 }
 
 :root{
-    --blue: #2A4B60;
+    --blue: #375b72;
     --white-blue: #2f557185;
     --orange: #eca233;
     --white: #ffffff;
     --black: #000000;
+    --text: #5c5c5c;
 }
 
 .cabecalho{
@@ -107,6 +109,7 @@ h1, h2{
     margin: auto;
     max-width: 836px;
     margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .img__primeira-viagem{
@@ -128,7 +131,6 @@ h1, h2{
 
 .mulher{
     width: 26%;
-    /* float: left; */
     margin: 2px 26px 0 0;
 }
 
@@ -164,5 +166,129 @@ h1, h2{
 
 #servicos{
     background-color: var(--blue);
-    padding: ;
+    padding: 70px 214px 50px;
+    color: white;
+}
+
+.servicos__titulo{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.servicos__titulo h1{
+    font-size: 48px;
+    font-weight: lighter;
+}
+
+.servicos__items{
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.servicos__items > *{
+    flex-basis: 45%;
+    margin-bottom: 60px;
+}
+
+.servicos__items > div > img{
+    float: left;
+}
+
+.items__texto{
+    margin-left: 80px;
+}
+
+.items__texto h2{
+    width: 75%;
+    margin-bottom: 8px;
+}
+
+#depoimentos{
+    background-image: url(../img/testemunha-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    background-color: transparent;
+    padding: 70px 214px 40px;
+}
+
+.depoimentos__titulo > h1{
+    font-size: 42px;
+    color: var(--blue);
+    display: inline-block;
+}
+
+.depoimentos__titulo > img{
+    width: 50px;
+    margin-right: 15px;
+}
+
+.depoimentos__titulo{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 110px;
+}
+
+#rodape > *{
+    background-color: var(--blue);
+    padding: 22px;
+    text-align: center;
+    color: var(--white);
+}
+
+#rodape a{
+    margin-left: 6px;
+    text-decoration: none;
+    color: var(--white);
+    padding: 8px;
+    background-color: var(--orange);
+    border-radius: 8px;
+}
+
+.depoimentos__items{
+    display: flex;
+    width: fit-content;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.depoimentos__items > *{
+    background-color: var(--white);
+    flex-basis: 260px;
+    text-align: center;
+    height: 400px;
+    padding: 20px;
+    transition: transform .35s;
+    border-radius: 6px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.281);
+}
+
+.depoimentos__items > *:hover{
+    transform: scale(1.01);
+}
+
+.depoimentos__items > * > img{
+    border-radius: 50%;
+    width: 120px;
+    margin-top: -66px;
+    padding: 5px;
+    background-color: var(--white);
+}
+
+.depoimentos__items > * > h2{
+    color: var(--blue);
+}
+
+.depoimentos__items-num-viagem{
+    color: var(--orange);
+    margin-bottom: 15px;
+}
+
+.texto-depoimentos{
+    color: var(--text);
+    text-align: left;
 }
